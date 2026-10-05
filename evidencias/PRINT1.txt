@@ -1,0 +1,271 @@
+PRINT1 - REPRODUCAO com o codigo original do enunciado (com bugs)
+Codigo testado: evidencias/desconto_original.py
+
+============================= test session starts =============================
+platform win32 -- Python 3.14.2, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\danielpordeusg\Desktop\prova_testes_unitarios\.venv\Scripts\python.exe
+rootdir: C:\Users\danielpordeusg\Desktop\prova_testes_unitarios
+collecting ... collected 52 items
+
+test_desconto.py::test_desconto_por_faixa_e_teto[0-COMUM-0] PASSED       [  1%]
+test_desconto.py::test_desconto_por_faixa_e_teto[0-VIP-0] PASSED         [  3%]
+test_desconto.py::test_desconto_por_faixa_e_teto[50-COMUM-0] PASSED      [  5%]
+test_desconto.py::test_desconto_por_faixa_e_teto[50-VIP-2.5] PASSED      [  7%]
+test_desconto.py::test_desconto_por_faixa_e_teto[99.99-COMUM-0] PASSED   [  9%]
+test_desconto.py::test_desconto_por_faixa_e_teto[99.99-VIP-5.0] PASSED   [ 11%]
+test_desconto.py::test_desconto_por_faixa_e_teto[100-COMUM-10.0] FAILED  [ 13%]
+test_desconto.py::test_desconto_por_faixa_e_teto[100-VIP-15.0] FAILED    [ 15%]
+test_desconto.py::test_desconto_por_faixa_e_teto[100.01-COMUM-10.0] PASSED [ 17%]
+test_desconto.py::test_desconto_por_faixa_e_teto[100.01-VIP-15.0] PASSED [ 19%]
+test_desconto.py::test_desconto_por_faixa_e_teto[250-COMUM-25.0] PASSED  [ 21%]
+test_desconto.py::test_desconto_por_faixa_e_teto[250-VIP-37.5] PASSED    [ 23%]
+test_desconto.py::test_desconto_por_faixa_e_teto[499.99-COMUM-50.0] PASSED [ 25%]
+test_desconto.py::test_desconto_por_faixa_e_teto[499.99-VIP-75.0] PASSED [ 26%]
+test_desconto.py::test_desconto_por_faixa_e_teto[500-COMUM-100.0] PASSED [ 28%]
+test_desconto.py::test_desconto_por_faixa_e_teto[500-VIP-125.0] PASSED   [ 30%]
+test_desconto.py::test_desconto_por_faixa_e_teto[500.01-COMUM-100.0] PASSED [ 32%]
+test_desconto.py::test_desconto_por_faixa_e_teto[500.01-VIP-125.0] PASSED [ 34%]
+test_desconto.py::test_desconto_por_faixa_e_teto[600-COMUM-120.0] PASSED [ 36%]
+test_desconto.py::test_desconto_por_faixa_e_teto[600-VIP-150.0] PASSED   [ 38%]
+test_desconto.py::test_desconto_por_faixa_e_teto[999.9-COMUM-199.98] PASSED [ 40%]
+test_desconto.py::test_desconto_por_faixa_e_teto[1000-COMUM-200.0] PASSED [ 42%]
+test_desconto.py::test_desconto_por_faixa_e_teto[1000.1-COMUM-200.0] PASSED [ 44%]
+test_desconto.py::test_desconto_por_faixa_e_teto[799.8-VIP-199.95] PASSED [ 46%]
+test_desconto.py::test_desconto_por_faixa_e_teto[800-VIP-200.0] PASSED   [ 48%]
+test_desconto.py::test_desconto_por_faixa_e_teto[800.2-VIP-200.0] PASSED [ 50%]
+test_desconto.py::test_desconto_por_faixa_e_teto[10000-COMUM-200.0] PASSED [ 51%]
+test_desconto.py::test_desconto_por_faixa_e_teto[10000-VIP-200.0] PASSED [ 53%]
+test_desconto.py::test_vip_independente_de_maiusculas[50-2.5-VIP] PASSED [ 55%]
+test_desconto.py::test_vip_independente_de_maiusculas[50-2.5-VIp] FAILED [ 57%]
+test_desconto.py::test_vip_independente_de_maiusculas[50-2.5-ViP] FAILED [ 59%]
+test_desconto.py::test_vip_independente_de_maiusculas[50-2.5-Vip] FAILED [ 61%]
+test_desconto.py::test_vip_independente_de_maiusculas[50-2.5-vIP] FAILED [ 63%]
+test_desconto.py::test_vip_independente_de_maiusculas[50-2.5-vIp] FAILED [ 65%]
+test_desconto.py::test_vip_independente_de_maiusculas[50-2.5-viP] FAILED [ 67%]
+test_desconto.py::test_vip_independente_de_maiusculas[50-2.5-vip] FAILED [ 69%]
+test_desconto.py::test_vip_independente_de_maiusculas[200-30.0-VIP] PASSED [ 71%]
+test_desconto.py::test_vip_independente_de_maiusculas[200-30.0-VIp] FAILED [ 73%]
+test_desconto.py::test_vip_independente_de_maiusculas[200-30.0-ViP] FAILED [ 75%]
+test_desconto.py::test_vip_independente_de_maiusculas[200-30.0-Vip] FAILED [ 76%]
+test_desconto.py::test_vip_independente_de_maiusculas[200-30.0-vIP] FAILED [ 78%]
+test_desconto.py::test_vip_independente_de_maiusculas[200-30.0-vIp] FAILED [ 80%]
+test_desconto.py::test_vip_independente_de_maiusculas[200-30.0-viP] FAILED [ 82%]
+test_desconto.py::test_vip_independente_de_maiusculas[200-30.0-vip] FAILED [ 84%]
+test_desconto.py::test_vip_independente_de_maiusculas[600-150.0-VIP] PASSED [ 86%]
+test_desconto.py::test_vip_independente_de_maiusculas[600-150.0-VIp] FAILED [ 88%]
+test_desconto.py::test_vip_independente_de_maiusculas[600-150.0-ViP] FAILED [ 90%]
+test_desconto.py::test_vip_independente_de_maiusculas[600-150.0-Vip] FAILED [ 92%]
+test_desconto.py::test_vip_independente_de_maiusculas[600-150.0-vIP] FAILED [ 94%]
+test_desconto.py::test_vip_independente_de_maiusculas[600-150.0-vIp] FAILED [ 96%]
+test_desconto.py::test_vip_independente_de_maiusculas[600-150.0-viP] FAILED [ 98%]
+test_desconto.py::test_vip_independente_de_maiusculas[600-150.0-vip] FAILED [100%]
+
+================================== FAILURES ===================================
+_______________ test_desconto_por_faixa_e_teto[100-COMUM-10.0] ________________
+test_desconto.py:49: in test_desconto_por_faixa_e_teto
+    assert calcular_desconto(valor_compra, tipo_cliente) == pytest.approx(esperado)
+E   assert 0 == 10.0 ± 1.0e-05
+E     
+E     comparison failed
+E     Obtained: 0
+E     Expected: 10.0 ± 1.0e-05
+________________ test_desconto_por_faixa_e_teto[100-VIP-15.0] _________________
+test_desconto.py:49: in test_desconto_por_faixa_e_teto
+    assert calcular_desconto(valor_compra, tipo_cliente) == pytest.approx(esperado)
+E   assert 5.0 == 15.0 ± 1.5e-05
+E     
+E     comparison failed
+E     Obtained: 5.0
+E     Expected: 15.0 ± 1.5e-05
+_______________ test_vip_independente_de_maiusculas[50-2.5-VIp] _______________
+test_desconto.py:57: in test_vip_independente_de_maiusculas
+    assert calcular_desconto(valor_compra, tipo_cliente) == pytest.approx(esperado)
+E   assert 0 == 2.5 ± 2.5e-06
+E     
+E     comparison failed
+E     Obtained: 0
+E     Expected: 2.5 ± 2.5e-06
+_______________ test_vip_independente_de_maiusculas[50-2.5-ViP] _______________
+test_desconto.py:57: in test_vip_independente_de_maiusculas
+    assert calcular_desconto(valor_compra, tipo_cliente) == pytest.approx(esperado)
+E   assert 0 == 2.5 ± 2.5e-06
+E     
+E     comparison failed
+E     Obtained: 0
+E     Expected: 2.5 ± 2.5e-06
+_______________ test_vip_independente_de_maiusculas[50-2.5-Vip] _______________
+test_desconto.py:57: in test_vip_independente_de_maiusculas
+    assert calcular_desconto(valor_compra, tipo_cliente) == pytest.approx(esperado)
+E   assert 0 == 2.5 ± 2.5e-06
+E     
+E     comparison failed
+E     Obtained: 0
+E     Expected: 2.5 ± 2.5e-06
+_______________ test_vip_independente_de_maiusculas[50-2.5-vIP] _______________
+test_desconto.py:57: in test_vip_independente_de_maiusculas
+    assert calcular_desconto(valor_compra, tipo_cliente) == pytest.approx(esperado)
+E   assert 0 == 2.5 ± 2.5e-06
+E     
+E     comparison failed
+E     Obtained: 0
+E     Expected: 2.5 ± 2.5e-06
+_______________ test_vip_independente_de_maiusculas[50-2.5-vIp] _______________
+test_desconto.py:57: in test_vip_independente_de_maiusculas
+    assert calcular_desconto(valor_compra, tipo_cliente) == pytest.approx(esperado)
+E   assert 0 == 2.5 ± 2.5e-06
+E     
+E     comparison failed
+E     Obtained: 0
+E     Expected: 2.5 ± 2.5e-06
+_______________ test_vip_independente_de_maiusculas[50-2.5-viP] _______________
+test_desconto.py:57: in test_vip_independente_de_maiusculas
+    assert calcular_desconto(valor_compra, tipo_cliente) == pytest.approx(esperado)
+E   assert 0 == 2.5 ± 2.5e-06
+E     
+E     comparison failed
+E     Obtained: 0
+E     Expected: 2.5 ± 2.5e-06
+_______________ test_vip_independente_de_maiusculas[50-2.5-vip] _______________
+test_desconto.py:57: in test_vip_independente_de_maiusculas
+    assert calcular_desconto(valor_compra, tipo_cliente) == pytest.approx(esperado)
+E   assert 0 == 2.5 ± 2.5e-06
+E     
+E     comparison failed
+E     Obtained: 0
+E     Expected: 2.5 ± 2.5e-06
+______________ test_vip_independente_de_maiusculas[200-30.0-VIp] ______________
+test_desconto.py:57: in test_vip_independente_de_maiusculas
+    assert calcular_desconto(valor_compra, tipo_cliente) == pytest.approx(esperado)
+E   assert 20.0 == 30.0 ± 3.0e-05
+E     
+E     comparison failed
+E     Obtained: 20.0
+E     Expected: 30.0 ± 3.0e-05
+______________ test_vip_independente_de_maiusculas[200-30.0-ViP] ______________
+test_desconto.py:57: in test_vip_independente_de_maiusculas
+    assert calcular_desconto(valor_compra, tipo_cliente) == pytest.approx(esperado)
+E   assert 20.0 == 30.0 ± 3.0e-05
+E     
+E     comparison failed
+E     Obtained: 20.0
+E     Expected: 30.0 ± 3.0e-05
+______________ test_vip_independente_de_maiusculas[200-30.0-Vip] ______________
+test_desconto.py:57: in test_vip_independente_de_maiusculas
+    assert calcular_desconto(valor_compra, tipo_cliente) == pytest.approx(esperado)
+E   assert 20.0 == 30.0 ± 3.0e-05
+E     
+E     comparison failed
+E     Obtained: 20.0
+E     Expected: 30.0 ± 3.0e-05
+______________ test_vip_independente_de_maiusculas[200-30.0-vIP] ______________
+test_desconto.py:57: in test_vip_independente_de_maiusculas
+    assert calcular_desconto(valor_compra, tipo_cliente) == pytest.approx(esperado)
+E   assert 20.0 == 30.0 ± 3.0e-05
+E     
+E     comparison failed
+E     Obtained: 20.0
+E     Expected: 30.0 ± 3.0e-05
+______________ test_vip_independente_de_maiusculas[200-30.0-vIp] ______________
+test_desconto.py:57: in test_vip_independente_de_maiusculas
+    assert calcular_desconto(valor_compra, tipo_cliente) == pytest.approx(esperado)
+E   assert 20.0 == 30.0 ± 3.0e-05
+E     
+E     comparison failed
+E     Obtained: 20.0
+E     Expected: 30.0 ± 3.0e-05
+______________ test_vip_independente_de_maiusculas[200-30.0-viP] ______________
+test_desconto.py:57: in test_vip_independente_de_maiusculas
+    assert calcular_desconto(valor_compra, tipo_cliente) == pytest.approx(esperado)
+E   assert 20.0 == 30.0 ± 3.0e-05
+E     
+E     comparison failed
+E     Obtained: 20.0
+E     Expected: 30.0 ± 3.0e-05
+______________ test_vip_independente_de_maiusculas[200-30.0-vip] ______________
+test_desconto.py:57: in test_vip_independente_de_maiusculas
+    assert calcular_desconto(valor_compra, tipo_cliente) == pytest.approx(esperado)
+E   assert 20.0 == 30.0 ± 3.0e-05
+E     
+E     comparison failed
+E     Obtained: 20.0
+E     Expected: 30.0 ± 3.0e-05
+_____________ test_vip_independente_de_maiusculas[600-150.0-VIp] ______________
+test_desconto.py:57: in test_vip_independente_de_maiusculas
+    assert calcular_desconto(valor_compra, tipo_cliente) == pytest.approx(esperado)
+E   assert 120.0 == 150.0 ± 1.5e-04
+E     
+E     comparison failed
+E     Obtained: 120.0
+E     Expected: 150.0 ± 1.5e-04
+_____________ test_vip_independente_de_maiusculas[600-150.0-ViP] ______________
+test_desconto.py:57: in test_vip_independente_de_maiusculas
+    assert calcular_desconto(valor_compra, tipo_cliente) == pytest.approx(esperado)
+E   assert 120.0 == 150.0 ± 1.5e-04
+E     
+E     comparison failed
+E     Obtained: 120.0
+E     Expected: 150.0 ± 1.5e-04
+_____________ test_vip_independente_de_maiusculas[600-150.0-Vip] ______________
+test_desconto.py:57: in test_vip_independente_de_maiusculas
+    assert calcular_desconto(valor_compra, tipo_cliente) == pytest.approx(esperado)
+E   assert 120.0 == 150.0 ± 1.5e-04
+E     
+E     comparison failed
+E     Obtained: 120.0
+E     Expected: 150.0 ± 1.5e-04
+_____________ test_vip_independente_de_maiusculas[600-150.0-vIP] ______________
+test_desconto.py:57: in test_vip_independente_de_maiusculas
+    assert calcular_desconto(valor_compra, tipo_cliente) == pytest.approx(esperado)
+E   assert 120.0 == 150.0 ± 1.5e-04
+E     
+E     comparison failed
+E     Obtained: 120.0
+E     Expected: 150.0 ± 1.5e-04
+_____________ test_vip_independente_de_maiusculas[600-150.0-vIp] ______________
+test_desconto.py:57: in test_vip_independente_de_maiusculas
+    assert calcular_desconto(valor_compra, tipo_cliente) == pytest.approx(esperado)
+E   assert 120.0 == 150.0 ± 1.5e-04
+E     
+E     comparison failed
+E     Obtained: 120.0
+E     Expected: 150.0 ± 1.5e-04
+_____________ test_vip_independente_de_maiusculas[600-150.0-viP] ______________
+test_desconto.py:57: in test_vip_independente_de_maiusculas
+    assert calcular_desconto(valor_compra, tipo_cliente) == pytest.approx(esperado)
+E   assert 120.0 == 150.0 ± 1.5e-04
+E     
+E     comparison failed
+E     Obtained: 120.0
+E     Expected: 150.0 ± 1.5e-04
+_____________ test_vip_independente_de_maiusculas[600-150.0-vip] ______________
+test_desconto.py:57: in test_vip_independente_de_maiusculas
+    assert calcular_desconto(valor_compra, tipo_cliente) == pytest.approx(esperado)
+E   assert 120.0 == 150.0 ± 1.5e-04
+E     
+E     comparison failed
+E     Obtained: 120.0
+E     Expected: 150.0 ± 1.5e-04
+=========================== short test summary info ===========================
+FAILED test_desconto.py::test_desconto_por_faixa_e_teto[100-COMUM-10.0] - ass...
+FAILED test_desconto.py::test_desconto_por_faixa_e_teto[100-VIP-15.0] - asser...
+FAILED test_desconto.py::test_vip_independente_de_maiusculas[50-2.5-VIp] - as...
+FAILED test_desconto.py::test_vip_independente_de_maiusculas[50-2.5-ViP] - as...
+FAILED test_desconto.py::test_vip_independente_de_maiusculas[50-2.5-Vip] - as...
+FAILED test_desconto.py::test_vip_independente_de_maiusculas[50-2.5-vIP] - as...
+FAILED test_desconto.py::test_vip_independente_de_maiusculas[50-2.5-vIp] - as...
+FAILED test_desconto.py::test_vip_independente_de_maiusculas[50-2.5-viP] - as...
+FAILED test_desconto.py::test_vip_independente_de_maiusculas[50-2.5-vip] - as...
+FAILED test_desconto.py::test_vip_independente_de_maiusculas[200-30.0-VIp] - ...
+FAILED test_desconto.py::test_vip_independente_de_maiusculas[200-30.0-ViP] - ...
+FAILED test_desconto.py::test_vip_independente_de_maiusculas[200-30.0-Vip] - ...
+FAILED test_desconto.py::test_vip_independente_de_maiusculas[200-30.0-vIP] - ...
+FAILED test_desconto.py::test_vip_independente_de_maiusculas[200-30.0-vIp] - ...
+FAILED test_desconto.py::test_vip_independente_de_maiusculas[200-30.0-viP] - ...
+FAILED test_desconto.py::test_vip_independente_de_maiusculas[200-30.0-vip] - ...
+FAILED test_desconto.py::test_vip_independente_de_maiusculas[600-150.0-VIp]
+FAILED test_desconto.py::test_vip_independente_de_maiusculas[600-150.0-ViP]
+FAILED test_desconto.py::test_vip_independente_de_maiusculas[600-150.0-Vip]
+FAILED test_desconto.py::test_vip_independente_de_maiusculas[600-150.0-vIP]
+FAILED test_desconto.py::test_vip_independente_de_maiusculas[600-150.0-vIp]
+FAILED test_desconto.py::test_vip_independente_de_maiusculas[600-150.0-viP]
+FAILED test_desconto.py::test_vip_independente_de_maiusculas[600-150.0-vip]
+======================== 23 failed, 29 passed in 0.18s ========================
